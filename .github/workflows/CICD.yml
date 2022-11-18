@@ -44,7 +44,7 @@ jobs:
           - { os: windows-latest , features: feat_os_windows }
     steps:
     - uses: actions/checkout@v3
-    - uses: Swatinem/rust-cache@v1
+    - uses: Swatinem/rust-cache@v2
     - name: Initialize workflow variables
       id: vars
       shell: bash
@@ -102,7 +102,7 @@ jobs:
           - { os: ubuntu-latest , features: feat_os_unix }
     steps:
     - uses: actions/checkout@v3
-    - uses: Swatinem/rust-cache@v1
+    - uses: Swatinem/rust-cache@v2
     - name: Initialize workflow variables
       id: vars
       shell: bash
@@ -166,7 +166,7 @@ jobs:
           - { os: windows-latest , features: feat_os_windows }
     steps:
     - uses: actions/checkout@v3
-    - uses: Swatinem/rust-cache@v1
+    - uses: Swatinem/rust-cache@v2
     - name: Initialize workflow variables
       id: vars
       shell: bash
@@ -224,7 +224,7 @@ jobs:
           - { os: ubuntu-latest , features: feat_os_unix }
     steps:
     - uses: actions/checkout@v3
-    - uses: Swatinem/rust-cache@v1
+    - uses: Swatinem/rust-cache@v2
     - name: Initialize workflow variables
       id: vars
       shell: bash
@@ -276,7 +276,7 @@ jobs:
 #          - { os: windows-latest , features: feat_os_windows }
     steps:
     - uses: actions/checkout@v3
-    - uses: Swatinem/rust-cache@v1
+    - uses: Swatinem/rust-cache@v2
     - name: Initialize workflow variables
       id: vars
       shell: bash
@@ -321,7 +321,7 @@ jobs:
           - { os: ubuntu-latest , features: feat_os_unix }
     steps:
     - uses: actions/checkout@v3
-    - uses: Swatinem/rust-cache@v1
+    - uses: Swatinem/rust-cache@v2
     - name: Initialize workflow variables
       id: vars
       shell: bash
@@ -398,7 +398,7 @@ jobs:
           - { os: ubuntu-latest , features: feat_os_unix }
     steps:
     - uses: actions/checkout@v3
-    - uses: Swatinem/rust-cache@v1
+    - uses: Swatinem/rust-cache@v2
     - name: Install `rust` toolchain
       uses: actions-rs/toolchain@v1
       with:
@@ -423,7 +423,7 @@ jobs:
           - { os: ubuntu-latest , features: feat_os_unix }
     steps:
     - uses: actions/checkout@v3
-    - uses: Swatinem/rust-cache@v1
+    - uses: Swatinem/rust-cache@v2
     - name: Install `rust` toolchain
       uses: actions-rs/toolchain@v1
       with:
@@ -453,7 +453,7 @@ jobs:
           - { os: windows-latest , features: feat_os_windows }
     steps:
     - uses: actions/checkout@v3
-    - uses: Swatinem/rust-cache@v1
+    - uses: Swatinem/rust-cache@v2
     - name: Install `rust` toolchain
       uses: actions-rs/toolchain@v1
       with:
@@ -479,7 +479,7 @@ jobs:
           - { os: windows-latest , features: feat_os_windows }
     steps:
     - uses: actions/checkout@v3
-    - uses: Swatinem/rust-cache@v1
+    - uses: Swatinem/rust-cache@v2
     - name: Install `rust` toolchain
       uses: actions-rs/toolchain@v1
       with:
@@ -503,7 +503,7 @@ jobs:
           - { os: ubuntu-latest , features: feat_os_unix }
     steps:
     - uses: actions/checkout@v3
-    - uses: Swatinem/rust-cache@v1
+    - uses: Swatinem/rust-cache@v2
     - name: Install dependencies
       shell: bash
       run: |
@@ -569,7 +569,7 @@ jobs:
           - { os: windows-latest , target: x86_64-pc-windows-msvc      , features: feat_os_windows }
     steps:
     - uses: actions/checkout@v3
-    - uses: Swatinem/rust-cache@v1
+    - uses: Swatinem/rust-cache@v2
     - name: Initialize workflow variables
       id: vars
       shell: bash
@@ -821,7 +821,7 @@ jobs:
           - { os: ubuntu-latest }
     steps:
     - uses: actions/checkout@v3
-    - uses: Swatinem/rust-cache@v1
+    - uses: Swatinem/rust-cache@v2
     - name: Install/setup prerequisites
       shell: bash
       run: |
@@ -912,7 +912,7 @@ jobs:
       mem: 2048
     steps:
     - uses: actions/checkout@v3
-    - uses: Swatinem/rust-cache@v1
+    - uses: Swatinem/rust-cache@v2
     - name: Prepare, build and test
       ## spell-checker:ignore (ToDO) sshfs usesh vmactions
       uses: vmactions/freebsd-vm@v0.1.6
@@ -980,7 +980,7 @@ jobs:
           - { os: windows-latest , features: windows }
     steps:
     - uses: actions/checkout@v3
-    - uses: Swatinem/rust-cache@v1
+    - uses: Swatinem/rust-cache@v2
     # - name: Reattach HEAD ## may be needed for accurate code coverage info
     #   run: git checkout ${{ github.head_ref }}
     - name: Initialize workflow variables
